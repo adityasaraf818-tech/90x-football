@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>90X — The Football World</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+      <div class="logo">90<span>X</span></div>
+
+      <button class="menu-btn" id="menuBtn">☰</button>
+
+      <nav id="nav">
+        <a href="#home">HOME</a>
+        <a href="#matches">MATCHES</a>
+        <a href="#news">NEWS</a>
+        <a href="#transfers">TRANSFERS</a>
+        <a href="#standings">TABLE</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- ================= HERO ================= -->
+
+      <section class="hero" id="home">
+        <div class="hero-text">
+          <p class="small-title">THE FOOTBALL WORLD</p>
+
+          <h1>
+            YOUR GAME.<br />
+            <span>YOUR WORLD.</span>
+          </h1>
+
+          <p>Follow matches, football news, transfers and league tables.</p>
+
+          <a href="#matches" class="hero-btn"> FOLLOW THE GAME → </a>
+        </div>
+
+        <div class="football-circle">⚽</div>
+      </section>
+
+      <!-- ================= MATCHES ================= -->
+
+      <section class="section" id="matches">
+        <div class="section-heading">
+          <div>
+            <p class="small-title">FOLLOW THE ACTION</p>
+
+            <h2>LIVE <span>MATCHES.</span></h2>
+          </div>
+
+          <button class="refresh-btn" id="refreshMatches">↻</button>
+        </div>
+
+        <div class="match-tabs">
+          <button class="match-tab active" data-type="live">LIVE</button>
+
+          <button class="match-tab" data-type="upcoming">UPCOMING</button>
+        </div>
+
+        <div id="matchesGrid" class="matches-grid">
+          <p class="loading">Loading matches...</p>
+        </div>
+      </section>
+
+      <!-- ================= NEWS ================= -->
+
+      <section class="section" id="news">
+        <div class="section-heading">
+          <div>
+            <p class="small-title">AROUND THE WORLD</p>
+
+            <h2>LATEST <span>NEWS.</span></h2>
+          </div>
+
+          <button class="refresh-btn" id="refreshNews">↻</button>
+        </div>
+
+        <div id="newsGrid" class="news-grid">
+          <p class="loading">Loading latest football news...</p>
+        </div>
+      </section>
+
+      <!-- ================= TRANSFERS ================= -->
+
+      <section class="section" id="transfers">
+        <div class="section-heading">
+          <div>
+            <p class="small-title">THE TRANSFER WINDOW</p>
+
+            <h2>TRANSFER <span>RADAR.</span></h2>
+          </div>
+
+          <button class="refresh-btn" id="refreshTransfers">↻</button>
+        </div>
+
+        <div class="transfer-grid">
+          <p class="loading">Loading transfer radar...</p>
+        </div>
+      </section>
+
+      <!-- ================= CLUBS ================= -->
+
+      <section class="section">
+        <div class="section-heading">
+          <div>
+            <p class="small-title">FOLLOW THE GAME</p>
+
+            <h2>
+              YOUR <span>CLUB.</span>
+              YOUR WORLD.
+            </h2>
+          </div>
+        </div>
+
+        <div class="clubs-grid">
+          <div class="club-card">
+            <img src="image/clubs/real madrid.png" alt="Real Madrid" />
+            <h3>REAL MADRID</h3>
+            <span>SPAIN</span>
+          </div>
+
+          <div class="club-card">
+            <img src="image/clubs/barsa.JPG" alt="Barcelona" />
+            <h3>BARCELONA</h3>
+            <span>SPAIN</span>
+          </div>
+
+          <div class="club-card">
+            <img src="image/clubs/man city.png" alt="Manchester City" />
+            <h3>MANCHESTER CITY</h3>
+            <span>ENGLAND</span>
+          </div>
+
+          <div class="club-card">
+            <img src="image/clubs/liverpool.png" alt="Liverpool" />
+            <h3>LIVERPOOL</h3>
+            <span>ENGLAND</span>
+          </div>
+
+          <div class="club-card">
+            <img src="image/clubs/psg.png" alt="Paris Saint-Germain" />
+            <h3>PARIS SAINT-GERMAIN</h3>
+            <span>FRANCE</span>
+          </div>
+
+          <div class="club-card">
+            <img src="image/clubs/man united.png" alt="Manchester United" />
+            <h3>MANCHESTER UNITED</h3>
+            <span>ENGLAND</span>
+          </div>
+
+          <div class="club-card">
+            <img src="image/clubs/inter milan.png" alt="Inter Milan" />
+            <h3>INTER MILAN</h3>
+            <span>ITALY</span>
+          </div>
+
+          <div class="club-card">
+            <img src="image/clubs/chelsea.png" alt="Chelsea" />
+            <h3>CHelsea</h3>
+            <span>ENGLAND</span>
+          </div>
+
+          <div class="club-card">
+            <img src="image/clubs/bayern.png" alt="Bayern Munich" />
+            <h3>BAYERN MUNICH</h3>
+            <span>GERMANY</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= STANDINGS ================= -->
+
+      <section class="section" id="standings">
+        <div class="section-heading">
+          <div>
+            <p class="small-title">LEAGUE TABLE</p>
+
+            <h2 id="leagueTitle">PREMIER <span>LEAGUE.</span></h2>
+          </div>
+        </div>
+
+        <div class="league-buttons">
+          <button class="league-btn active" data-league="PL">
+            PREMIER LEAGUE
+          </button>
+
+          <button class="league-btn" data-league="PD">LA LIGA</button>
+
+          <button class="league-btn" data-league="BL1">BUNDESLIGA</button>
+
+          <button class="league-btn" data-league="SA">SERIE A</button>
+        </div>
+
+        <div class="standings">
+          <div class="standing-header">
+            <span>#</span>
+            <span>TEAM</span>
+            <span>PL</span>
+            <span>GD</span>
+            <span>PTS</span>
+          </div>
+
+          <div id="standingsTable">
+            <p class="loading">Loading league standings...</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+      <div class="logo">90<span>X</span></div>
+
+      <p>Build by Aditya Saraf</p>
+
+      <small> © 2026 90X FOOTBALL </small>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
